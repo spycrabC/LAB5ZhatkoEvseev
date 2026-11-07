@@ -1,0 +1,39 @@
+﻿<Window x:Class="LAB5ZhatkoEvseev.Cabinet"
+        xmlns:materialDesign="http://materialdesigninxaml.net"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LAB5ZhatkoEvseev"
+        mc:Ignorable="d"
+        MinWidth="250"
+        Title="Cabinet" Height="450" Width="329">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel HorizontalAlignment="Center">
+
+            <TextBlock Cursor="Hand" x:Name="tbName" TextWrapping="Wrap" FontSize="18" Text="Имя" MouseLeftButtonDown="TextBlock_MouseLeftButtonDown" />
+            <Button x:Name="btnExit" Content="Выход"  Click="Button_Click_8" Visibility="Hidden"  Width="86"/>
+
+        </StackPanel>
+
+        <StackPanel HorizontalAlignment="Right" Grid.Column="1">
+            <Button Content="Сотрудники" MinWidth="250" Margin="0,  0 , 0, 5" Click="Button_Click"/>
+            <Button Content="Проекты" MinWidth="250" Margin="0,  0 , 0, 5" Click="Button_Click_2"/>
+            <Button Content="Съемочная группа" MinWidth="250" Margin="0,  0 , 0, 5" Click="Button_Click_3"/>
+            <Button Content="График съемок" MinWidth="250" Margin="0,  0 , 0, 5" Click="Button_Click_4"/>
+            <Button Content="Затраты" MinWidth="250" Margin="0,  0 , 0, 5" Click="Button_Click_5"/>
+            <Button Content="Прокат" MinWidth="250" Margin="0,  0 , 0, 5" Click="Button_Click_6"/>
+            <Button Content="Площадки" MinWidth="250" Margin="0,  0 , 0, 5" Click="Button_Click_1"/>
+        </StackPanel>
+
+
+    </Grid>
+
+
+
+</Window>
